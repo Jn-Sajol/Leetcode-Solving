@@ -19,5 +19,5 @@ class EventEmitter {
       }
       return result;
     }
-  }\
+  }
   EventEmitter();
