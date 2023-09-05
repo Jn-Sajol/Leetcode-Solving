@@ -10,6 +10,18 @@ const wordBreak = (s, wordDict) => {
   
     while (q.length) {
       const start = q.shift();
-
-  };
   
+      if (!visited.has(start)) {
+        for (let end = start + 1; end <= s.length; end++) {
+          if (set.has(s.slice(start, end))) {
+            if (end === s.length) return true;
+            q.push(end);
+          }
+        }
+        visited.add(start);
+      }
+    }
+    return false;
+  };
+  wordBreak()
+  //implementing the whole code with the basic of progrmaming thought
