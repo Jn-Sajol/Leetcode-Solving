@@ -26,5 +26,24 @@ var candy = function(ratings) {
         copy = [];
     }
     
-  
+    while(index >= 0) {
+        
+        if (index >= n) {
+            break;
+        }
+
+        if (ratings[index] > ratings[index + 1] && candies[index + 1] >= candies[index]) {            
+            candies[index] = candies[index] + 1;            
+            index = Math.max(-1, index - 2);
+        }
+        else if (ratings[index] > ratings[index - 1] && candies[index - 1] >= candies[index]) {            
+            candies[index] = candies[index - 1] + 1;
+        }
+
+        index++;
+     }
+
+    
+    return candies.reduce((sum, candy) => sum + candy, 0)
 }
+candy();
