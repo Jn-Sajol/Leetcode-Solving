@@ -15,3 +15,4 @@ var findContentChildren = function(g, s) {
     
     return res;
 };
+findContentChildren();
