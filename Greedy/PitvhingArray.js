@@ -6,7 +6,6 @@ var minPatches = function(nums, n) {
         if(sumCanCreate+1 < nums[index] || (index >= nums.length && sumCanCreate+1 < n)) {
             patchCount++;
             sumCanCreate += (sumCanCreate+1);
-        // if we can create nums[index].
         } else {
             sumCanCreate += nums[index];
             index++;
@@ -14,3 +13,4 @@ var minPatches = function(nums, n) {
     }
     return patchCount;
 };
+minPatches()
