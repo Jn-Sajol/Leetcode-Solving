@@ -13,3 +13,4 @@ var cloneGraph = function (node) {
     }
     return dfs(node, new Map());
 }
+cloneGraph();
