@@ -41,5 +41,12 @@ class UnionFind {
     }
     return this.arr[key];
   }
+  union(dividend, divisor, value) {
+    let [dividendGid, dividendWeight] = this.find(dividend);
+    let [divisorGid, divisorWeight] = this.find(divisor);
 
+    if (dividendGid !== divisorGid) {
+        this.arr[dividendGid] = [divisorGid, divisorWeight * value / dividendWeight];
+    }
+  }
 }
