@@ -16,3 +16,4 @@ var pathSum = function(root, sum) {
     backtrack(root.right, sum - root.val, res, temp);
     temp.pop();
   }
+  pathSum(root,backtrack)
