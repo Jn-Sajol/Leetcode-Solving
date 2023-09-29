@@ -18,9 +18,7 @@ var minCameraCover = function(root) {
     var travel = function(node) {
         if(!node) {
             return 2; 
-            //if return 0, we will need to add camera on leaf, 
-            //if return 1, means the leaf nodes will be monitored, and we will not add camera on leaf's parent node, so we have to return 2 here
-        }
+           }
         var left = travel(node.left);
         var right = travel(node.right);
         // both childs are monitored
