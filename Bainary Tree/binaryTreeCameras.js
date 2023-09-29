@@ -1,17 +1,4 @@
-/**
- * @param {TreeNode} root
- * @return {number}
- */
 
-/** 
-* There are 3 states a node could be
-* state 0 : the node is not monitored
-* state 1 : the node has a camera
-* state 2 : the node is monitored by neighbour
-* 
-* Main Idea, travel from bottom to up, because leaf level has most nodes, we should not add 
-* camera on leaf
-*/
 var minCameraCover = function(root) {
     var result = 0;
     /** tree travel function that return the state of a node */
