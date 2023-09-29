@@ -27,4 +27,10 @@ var rob = function(root) {
         x = [withRoot, withoutRoot]
         return x
     }
+    a = dfs(root)
+    console.log(a)
+
+    return Math.max(a[0],a[1])
+
+
 };
