@@ -1,7 +1,3 @@
-/**
- * @param {number} n
- * @return {number}
- */
 
 // Function to calculate the factorial of a number
 function factorial(num) {
@@ -31,3 +27,4 @@ var climbStairs = function(n) {
 
     return count;
 };
+climbStairs()
