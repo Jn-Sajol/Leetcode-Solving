@@ -1,7 +1,3 @@
-/**
- * @param {number[][]} dungeon
- * @return {number}
- */
 
 var calculateMinimumHP = function(dungeon) {
     const n = dungeon.length, m = dungeon[0].length;
