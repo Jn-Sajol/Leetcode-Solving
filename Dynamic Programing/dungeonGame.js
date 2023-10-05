@@ -15,3 +15,4 @@ var calculateMinimumHP = function(dungeon) {
     
     return dp[0][0]
 };
+calculateMinimumHP()
