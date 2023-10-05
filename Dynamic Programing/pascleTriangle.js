@@ -3,7 +3,6 @@
  * @return {number[][]}
  */
 var generate = function(numRows) {
-    // initilize the result array
     let dp = []
 
     for (let i = 0; i < numRows; i++) {
