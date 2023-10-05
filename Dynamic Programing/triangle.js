@@ -5,3 +5,4 @@ var minimumTotal = function(triangle) {
             triangle[i][j] += Math.min(triangle[i+1][j], triangle[i+1][j+1])
     return triangle[0][0]
 }
+minimumTotal()
