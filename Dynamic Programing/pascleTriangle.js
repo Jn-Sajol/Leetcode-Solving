@@ -13,3 +13,4 @@ var generate = function(numRows) {
 
     return dp
 };
+generate()
