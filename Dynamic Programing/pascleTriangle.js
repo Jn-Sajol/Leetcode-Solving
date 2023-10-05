@@ -7,8 +7,6 @@ var generate = function(numRows) {
     let dp = []
 
     for (let i = 0; i < numRows; i++) {
-        // Setup for each new row
-        // We know that each row will have first and last number set to 1
         dp[i] = []
         dp[i][0] = 1
         dp[i][i] = 1
