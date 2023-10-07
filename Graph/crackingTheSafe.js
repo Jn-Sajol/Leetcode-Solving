@@ -5,9 +5,6 @@ var crackSafe = function (n, k) {
     const visited = new Set()
     const seq = []
     const prefix = '0'.repeat(n - 1)
-    
-    // this is bottom up backtracking
-    // first visit all the edges completely before adding the node to the final solution
     dfs(prefix, seq, visited, k)
   
     // We append the original prefix to the sequence as the a De Bruijn sequence 
