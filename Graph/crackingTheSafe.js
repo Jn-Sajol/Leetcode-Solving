@@ -14,9 +14,6 @@ const dfs = (prefix, seq, visited, k) => {
   for (let i = 0; i < k; i++) {
     const combination = prefix + i.toString()
     if (visited.has(combination)) continue
-    
-    // If the current combination hasn't been visited add it to the visited set
-    // so we do no revisit it.
     visited.add(combination)
     
     // Create a new prefix using the current combination
