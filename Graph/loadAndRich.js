@@ -7,9 +7,16 @@ var loudAndRich = function(richer, quiet) {
 		return map.set(own, richerSet);
 	}, new Map());
 
-	
-	};
+	const findQuiet = (person) => {
+		if (result[person] !== void 0) return result[person];
+		const richerSet = richMap.get(person) ?? [];
 
-	quiet.forEach((_, index) => findQuiet(index));
-	return result;
+		result[person] = person;
+		richerSet.forEach(target => {
+			const targetQuiet = quiet[findQuiet(target)];
+			if (targetQuiet < quiet[result[person]])
+				result[person] = result[target];
+		});
+		return result[person];
+	};
 };
