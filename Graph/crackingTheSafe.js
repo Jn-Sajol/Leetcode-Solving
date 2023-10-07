@@ -7,8 +7,6 @@ var crackSafe = function (n, k) {
     const prefix = '0'.repeat(n - 1)
     dfs(prefix, seq, visited, k)
     seq.push(prefix)
-  
-    // Join the array to return the sequence as a string.
     return seq.join('')
 }
 
