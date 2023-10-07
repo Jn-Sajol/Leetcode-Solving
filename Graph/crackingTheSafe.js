@@ -2,8 +2,6 @@
 
 var crackSafe = function (n, k) {
     if (n === 1 && k === 1) return '0'
-  
-    // visited will keep track of all visited edges.
     const visited = new Set()
     
     // The De Bruijn Sequence that will be the output of the function.
