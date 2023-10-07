@@ -6,9 +6,6 @@ var crackSafe = function (n, k) {
     const seq = []
     const prefix = '0'.repeat(n - 1)
     
-    // We will perform a depth first traveral until we visit every edge (combination)
-    // while adding the last element of a combination to the sequence.
-    
     // this is bottom up backtracking
     // first visit all the edges completely before adding the node to the final solution
     dfs(prefix, seq, visited, k)
