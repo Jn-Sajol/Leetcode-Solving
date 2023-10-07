@@ -12,9 +12,6 @@ var crackSafe = function (n, k) {
 
 const dfs = (prefix, seq, visited, k) => {
   for (let i = 0; i < k; i++) {
-    // Generate a new combination using all the numbers from 0 to k - 1
-    // this will give us all the edges that are adjacent to the previous
-    // combination.
     const combination = prefix + i.toString()
     
     // Check if the current combination has been visited we skip it.
