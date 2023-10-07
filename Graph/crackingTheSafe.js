@@ -13,8 +13,6 @@ var crackSafe = function (n, k) {
 const dfs = (prefix, seq, visited, k) => {
   for (let i = 0; i < k; i++) {
     const combination = prefix + i.toString()
-    
-    // Check if the current combination has been visited we skip it.
     if (visited.has(combination)) continue
     
     // If the current combination hasn't been visited add it to the visited set
