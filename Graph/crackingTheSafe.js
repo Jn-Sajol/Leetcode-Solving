@@ -16,8 +16,6 @@ const dfs = (prefix, seq, visited, k) => {
     if (visited.has(combination)) continue
     visited.add(combination)
     dfs(combination.slice(1), seq, visited, k)
-    
-    // Add the last element of the visited combination to the sequence.
     seq.push(i)
   }
 }
