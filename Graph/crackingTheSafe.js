@@ -1,7 +1,6 @@
 
 
 var crackSafe = function (n, k) {
-    // If k and n equal 1 the only combination possible is 0.
     if (n === 1 && k === 1) return '0'
   
     // visited will keep track of all visited edges.
