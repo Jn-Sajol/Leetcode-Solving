@@ -15,9 +15,6 @@ const dfs = (prefix, seq, visited, k) => {
     const combination = prefix + i.toString()
     if (visited.has(combination)) continue
     visited.add(combination)
-    
-    // Create a new prefix using the current combination
-    // and continue the depth first traversal.
     dfs(combination.slice(1), seq, visited, k)
     
     // Add the last element of the visited combination to the sequence.
