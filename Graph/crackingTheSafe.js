@@ -3,8 +3,6 @@
 var crackSafe = function (n, k) {
     if (n === 1 && k === 1) return '0'
     const visited = new Set()
-    
-    // The De Bruijn Sequence that will be the output of the function.
     const seq = []
     
     // To generate a De Bruijn sequence we must traverse every combination of size n
