@@ -6,10 +6,6 @@ var crackSafe = function (n, k) {
     const seq = []
     const prefix = '0'.repeat(n - 1)
     dfs(prefix, seq, visited, k)
-  
-    // We append the original prefix to the sequence as the a De Bruijn sequence 
-    // ends with the first combination. If we reverse the sequence it would still be 
-    // valid and in that case would start with the first combination instead.
     seq.push(prefix)
   
     // Join the array to return the sequence as a string.
