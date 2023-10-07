@@ -5,7 +5,10 @@ var loudAndRich = function(richer, quiet) {
 
 		richerSet.add(bester);
 		return map.set(own, richerSet);
-	}, 
+	}, new Map());
+
+	
+	};
 
 	quiet.forEach((_, index) => findQuiet(index));
 	return result;
