@@ -19,4 +19,7 @@ var loudAndRich = function(richer, quiet) {
 		});
 		return result[person];
 	};
+
+	quiet.forEach((_, index) => findQuiet(index));
+	return result;
 };
