@@ -4,11 +4,6 @@ var crackSafe = function (n, k) {
     if (n === 1 && k === 1) return '0'
     const visited = new Set()
     const seq = []
-    
-    // To generate a De Bruijn sequence we must traverse every combination of size n
-    // containing the number from 0 to k - 1. We will start with the prefix of the 
-    // combination with all 0s. If n equals 3 and k is greater than 1 our prefix would be
-    // 00 and the first combination, our starting edge would be 000.
     const prefix = '0'.repeat(n - 1)
     
     // We will perform a depth first traveral until we visit every edge (combination)
