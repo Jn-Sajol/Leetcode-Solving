@@ -19,3 +19,4 @@ const dfs = (prefix, seq, visited, k) => {
     seq.push(i)
   }
 }
+crackSafe()
