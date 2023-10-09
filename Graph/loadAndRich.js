@@ -23,4 +23,4 @@ var loudAndRich = function(richer, quiet) {
 	quiet.forEach((_, index) => findQuiet(index));
 	return result;
 };
-loudAndRich()
+loudAndRich([data])
