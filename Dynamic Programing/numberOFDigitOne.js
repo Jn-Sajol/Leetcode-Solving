@@ -8,5 +8,7 @@ var countDigitOne = function(n) {
       const d = i * 10;
       const q = Math.floor(n / d);
       const r = n % d;
-   
+      count += q * i + Math.min(Math.max(r - i + 1, 0), i);
+    }
+    return count;
 };
