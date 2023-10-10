@@ -8,3 +8,4 @@ function numSquares(n) {
     }
     return dp[n];
 }
+numSquares()
