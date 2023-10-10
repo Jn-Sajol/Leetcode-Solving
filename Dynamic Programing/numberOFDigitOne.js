@@ -9,3 +9,4 @@ var countDigitOne = function(n) {
     }
     return count;
 };
+countDigitOne()
