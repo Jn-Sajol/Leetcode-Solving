@@ -12,5 +12,12 @@ var nthSuperUglyNumber = function(n, primes) {
         for (var j = 0; j < primes.length; j++) {
             min = Math.min(min, primes[j] * arrayN[primesIndex[j]]);
         }
-      
+        arrayN[i] = min;
+        for (var j = 0; j < primes.length; j++) {
+            if (min == primes[j] * arrayN[primesIndex[j]]) {
+                primesIndex[j]++;
+            }
+        }
+    }
+    return arrayN[n-1];
 };
