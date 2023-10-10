@@ -17,4 +17,4 @@ var nthSuperUglyNumber = function(n, primes) {
     }
     return arrayN[n-1];
 };
-nthSuperUglyNumber()
+nthSuperUglyNumber([number],promiseCase)
