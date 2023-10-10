@@ -6,4 +6,5 @@ function numSquares(n) {
             dp[g] = Math.min(dp[g], dp[g - (k*k)] + 1) 
         }
     }
+    return dp[n];
 }
