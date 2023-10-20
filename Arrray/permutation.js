@@ -26,9 +26,6 @@ const permute = (nums) => {
             // After adding, we call DFS again. DFS will continue till we hit the base case above
 			// Think of this as just continuing down a path till we have an answer
             dfs();
-            
-            // Once we pop out of DFS, we need to remove from path array and remove from used Set
-            // This will let it be used later in further paths
             path.pop();
             used.delete(nums[i])
         }
