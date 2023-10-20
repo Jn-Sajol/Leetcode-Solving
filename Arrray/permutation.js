@@ -1,7 +1,4 @@
-/**
- * @param {number[]} nums
- * @return {number[][]}
- */
+
 const permute = (nums) => {
     // Backtracking
     const used = new Set(); // Keep track of what we have used
