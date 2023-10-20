@@ -35,31 +35,31 @@ const permute = (nums) => {
 permute()
 
 //efficient way
-const permute = (nums) => {
-    const res = [];
+// const permute = (nums) => {
+//     const res = [];
 
-    const dfs = (index) => {
-        if (index === nums.length) {
-            res.push([...nums]);
-            return;
-        }
+//     const dfs = (index) => {
+//         if (index === nums.length) {
+//             res.push([...nums]);
+//             return;
+//         }
 
-        for (let i = index; i < nums.length; i++) {
-            // Swap elements at indices 'index' and 'i'
-            [nums[index], nums[i]] = [nums[i], nums[index]];
-            dfs(index + 1);
-            // Swap back to backtrack
-            [nums[index], nums[i]] = [nums[i], nums[index]];
-        }
-    };
+//         for (let i = index; i < nums.length; i++) {
+//             // Swap elements at indices 'index' and 'i'
+//             [nums[index], nums[i]] = [nums[i], nums[index]];
+//             dfs(index + 1);
+//             // Swap back to backtrack
+//             [nums[index], nums[i]] = [nums[i], nums[index]];
+//         }
+//     };
 
-    dfs(0);
-    return res;
-};
+//     dfs(0);
+//     return res;
+// };
 
-const input = [1, 2, 3]; // Replace this with your input array
-const result = permute(input);
-console.log(result);
+// const input = [1, 2, 3]; // Replace this with your input array
+// const result = permute(input);
+// console.log(result);
 
 /**46. Permutations
 Medium
