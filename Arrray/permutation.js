@@ -41,3 +41,4 @@ const permute = (nums) => {
     
     return res;
 }
+permute()
