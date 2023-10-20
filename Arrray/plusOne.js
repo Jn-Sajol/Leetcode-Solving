@@ -3,7 +3,6 @@
  * @return {number[]}
  */
 var plusOne = function(digits) {
-    // Convert digits array to a string
     let s = digits.join("");
     
     // Increment the number represented by the string by 1
