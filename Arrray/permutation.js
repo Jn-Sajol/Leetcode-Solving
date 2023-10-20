@@ -8,5 +8,11 @@ const permute = (nums) => {
     const path = []; // Current potiential answer array
     const res = []; // Result array to be returned
     
+    const dfs = () => {
+        // If path is same length as nums, we know we have an answer. Push it to res array
+        if(path.length === nums.length) {
+            res.push([...path]); // We use spread operator to clone since arrays are pass by reference
+        }
+        
+      
    
-}
