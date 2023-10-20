@@ -7,3 +7,5 @@ var plusOne = function(digits) {
     let n = BigInt(s) + 1n;
     return n.toString().split("");
   };
+
+  plusOne()
