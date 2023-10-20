@@ -34,9 +34,6 @@ const permute = (nums) => {
         }
         
     }
-    
-    // Start DFS
-    // All variables are global, no need to pass in anything
     dfs();
     
     return res;
