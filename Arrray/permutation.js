@@ -34,6 +34,7 @@ const permute = (nums) => {
 }
 permute()
 
+//efficient way
 /**46. Permutations
 Medium
 18.1K
