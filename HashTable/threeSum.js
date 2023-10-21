@@ -31,6 +31,15 @@ function threeSum(nums) {
 		// `k` represents the "right" most element
 		let k = nums.length - 1
 		
+		// to summarize our setup, we have `i` that starts at the beginning,
+		// `k` that starts at the end, and `j` that races in between the two.
+		//
+		// note that `i` is controlled by our outer for-loop and will move the slowest.
+		// in the meantime, `j` and `k` will take turns inching towards each other depending
+		// on some logic we'll set up below. once they collide, `i` will be incremented up
+		// and we'll repeat the process.
+
+		
 		}
 	}
 
