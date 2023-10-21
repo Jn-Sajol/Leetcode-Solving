@@ -15,4 +15,13 @@ var romanToInt = function(s) {
       const cur = sym[s[i]];
       const next = sym[s[i + 1]];
 
- 
+      if (cur < next) {
+          result += next - cur;
+          i++;
+      } else {
+          result += cur;
+      }
+  }
+
+  return result;
+};
