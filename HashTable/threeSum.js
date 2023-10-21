@@ -13,9 +13,6 @@ function threeSum(nums) {
 	let target = 0
 
 	for (let i = 0; i < nums.length - 2; i++) {
-		// `i` represents the "left" most number in our sorted set.
-		// once this number hits 0, there's no need to go further since
-		// positive numbers cannot sum to a negative number
 		if (nums[i] > target) break
 		if (i > 0 && nums[i] === nums[i - 1]) continue
 		let j = i + 1
