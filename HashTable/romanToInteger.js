@@ -8,3 +8,11 @@ var romanToInt = function(s) {
       'D': 500,
       'M': 1000
   }
+
+  let result = 0;
+
+  for (let i = 0; i < s.length; i++) {
+      const cur = sym[s[i]];
+      const next = sym[s[i + 1]];
+
+ 
