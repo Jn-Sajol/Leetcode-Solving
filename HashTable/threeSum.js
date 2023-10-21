@@ -62,8 +62,6 @@ function threeSum(nums) {
 				// next unique elements. the previous while loops will not handle this.
 				j++
 				k--
-
-			// if the sum is too small, increment `j` to get closer to the target
 			} else if (sum < target) {
 				j++
 			} else { // (sum > target)
