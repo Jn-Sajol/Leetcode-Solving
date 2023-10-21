@@ -48,7 +48,27 @@ function threeSum(nums) {
 				// store the valid threesum
 				results.push([nums[i], nums[j], nums[k]])
 
-			
+				// this is important! we need to continue to increment `j` and decrement `k`
+				// as long as those values are duplicated. in other words, we wanna skip values
+				// we've already seen. otherwise, an input array of [-2,0,0,2,2] would result in
+				// [[-2,0,2], [-2,0,2]].
+				//
+				// (i'm not a fan of this part because we're doing a while loop as we're
+				// already inside of another while loop...)
+				while (nums[j] === nums[j + 1]) j++
+				while (nums[k] === nums[k - 1]) k--
+
+				// finally, we need to actually move `j` forward and `k` backward to the
+				// next unique elements. the previous while loops will not handle this.
+				j++
+				k--
+
+			// if the sum is too small, increment `j` to get closer to the target
+			} else if (sum < target) {
+				j++
+			} else { // (sum > target)
+				k--
+			}
 		}
 	}
 
