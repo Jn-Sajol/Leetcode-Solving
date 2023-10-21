@@ -39,7 +39,16 @@ function threeSum(nums) {
 		// on some logic we'll set up below. once they collide, `i` will be incremented up
 		// and we'll repeat the process.
 
-		
+		while (j < k) {
+			let sum = nums[i] + nums[j] + nums[k]
+
+			// if we find the target sum, increment `j` and decrement `k` for
+			// other potential combos where `i` is the anchor
+			if (sum === target) {
+				// store the valid threesum
+				results.push([nums[i], nums[j], nums[k]])
+
+			
 		}
 	}
 
