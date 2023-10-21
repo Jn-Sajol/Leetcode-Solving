@@ -20,12 +20,6 @@ function threeSum(nums) {
 
 		// we don't want repeats, so skip numbers we've already seen
 		if (i > 0 && nums[i] === nums[i - 1]) continue
-
-		// `j` represents the "middle" element between `i` and `k`.
-		// we will increment this up through the array while `i` and `k`
-		// are anchored to their positions. we will decrement `k` for
-		// for each pass through the array, and finally increment `i`
-		// once `j` and `k` meet.
 		let j = i + 1
 
 		let k = nums.length - 1
