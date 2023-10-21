@@ -57,9 +57,6 @@ function threeSum(nums) {
 				// already inside of another while loop...)
 				while (nums[j] === nums[j + 1]) j++
 				while (nums[k] === nums[k - 1]) k--
-
-				// finally, we need to actually move `j` forward and `k` backward to the
-				// next unique elements. the previous while loops will not handle this.
 				j++
 				k--
 			} else if (sum < target) {
