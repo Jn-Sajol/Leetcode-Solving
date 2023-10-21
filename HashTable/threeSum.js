@@ -17,8 +17,6 @@ function threeSum(nums) {
 		// once this number hits 0, there's no need to go further since
 		// positive numbers cannot sum to a negative number
 		if (nums[i] > target) break
-
-		// we don't want repeats, so skip numbers we've already seen
 		if (i > 0 && nums[i] === nums[i - 1]) continue
 		let j = i + 1
 
