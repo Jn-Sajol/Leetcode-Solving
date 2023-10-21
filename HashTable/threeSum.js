@@ -28,7 +28,6 @@ function threeSum(nums) {
 		// once `j` and `k` meet.
 		let j = i + 1
 
-		// `k` represents the "right" most element
 		let k = nums.length - 1
 
 		while (j < k) {
