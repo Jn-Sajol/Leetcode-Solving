@@ -30,3 +30,4 @@ function threeSum(nums) {
 
 	return results
 };
+threeSum()
