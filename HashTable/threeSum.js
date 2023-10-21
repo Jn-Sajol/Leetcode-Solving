@@ -1,7 +1,5 @@
 function threeSum(nums) {
 	const results = []
-
-	// obviously irrelevant if we don't have at least 3 numbers to play with!
 	if (nums.length < 3) return results
 	nums = nums.sort((a, b) => a - b)
 	let target = 0
