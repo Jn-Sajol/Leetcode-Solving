@@ -18,3 +18,4 @@ const countCoinChange = (coins, amount, memo={}) => {
     memo[amount] = min
     return memo[amount] 
 }
+coinChange()
