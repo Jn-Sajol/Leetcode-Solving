@@ -11,3 +11,5 @@ var rob = function(nums) {
     }
     return p2;
 };
+
+rob()
