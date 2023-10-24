@@ -50,4 +50,9 @@ Example 3:
 
 Input: s = "06"
 Output: 0
-Explanation: "06" cannot be mapped to "F" because of the leading zero ("6" is different from "06"). */
+Explanation: "06" cannot be mapped to "F" because of the leading zero ("6" is different from "06"). 
+
+Constraints:
+
+1 <= s.length <= 100
+s contains only digits and may contain leading zero(s).*/
