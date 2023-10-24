@@ -1,7 +1,4 @@
-/**
- * @param {number[][]} obstacleGrid
- * @return {number}
- */
+
 var uniquePathsWithObstacles = function(obstacleGrid) {
     let m = obstacleGrid.length;
      let n = obstacleGrid[0].length;
@@ -23,5 +20,15 @@ var uniquePathsWithObstacles = function(obstacleGrid) {
        if (row < 0 || column < 0 || obstacleGrid[row][column] === 1) {
          return 0;
        }
-    
+       if (memo.has(row + "_" + column)) {
+         return memo.get(row + "_" + column);
+       }
+   
+       let up = getAllPaths(row - 1, column);
+       let left = getAllPaths(row, column - 1);
+       memo.set(row + "_" + column, up + left);
+       return up + left;
+     };
+   
+     return getAllPaths(m - 1, n - 1);
    };
