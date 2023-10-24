@@ -32,3 +32,5 @@ var uniquePathsWithObstacles = function(obstacleGrid) {
    
      return getAllPaths(m - 1, n - 1);
    };
+
+   uniquePathsWithObstacles()
