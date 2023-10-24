@@ -15,3 +15,5 @@ var numDecodings = s => {
     
     return dp.pop();
 };
+
+numDecodings()
