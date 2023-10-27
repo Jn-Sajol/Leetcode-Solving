@@ -56,4 +56,12 @@ Hence all students are able to eat.
 Example 2:
 
 Input: students = [1,1,1,0,0,1], sandwiches = [1,0,0,0,1,1]
-Output: 3 */
+Output: 3
+
+
+Constraints:
+
+1 <= students.length, sandwiches.length <= 100
+students.length == sandwiches.length
+sandwiches[i] is 0 or 1.
+students[i] is 0 or 1.*/
