@@ -32,3 +32,24 @@ ProductOfNumbers.prototype.add = function(num) {
   this.ranges.push(this.total);
 };
 
+/** 
+ * @param {number} k
+ * @return {number}
+ */
+ProductOfNumbers.prototype.getProduct = function(k) {
+    if(this.ranges.length===1)
+    {
+      return this.total
+    }
+    if(k===this.ranges.length)
+    {
+      if(this.zeroIndex===-1)
+      {
+        return this.total
+        
+      }
+      else{
+        return 0
+      }
+    }
+   
