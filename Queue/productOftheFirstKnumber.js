@@ -4,10 +4,6 @@ var ProductOfNumbers = function() {
     this.zeroIndex = -1;
 };
 
-/** 
- * @param {number} num
- * @return {void}
- */
 ProductOfNumbers.prototype.add = function(num) {
   if(this.ranges.length===0)
   {
