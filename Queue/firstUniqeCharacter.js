@@ -7,3 +7,5 @@ var firstUniqChar = function(s) {
   }
   return -1;
 };
+
+firstUniqChar()
