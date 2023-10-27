@@ -103,4 +103,11 @@ productOfNumbers.getProduct(2); // return 20. The product of the last 2 numbers 
 productOfNumbers.getProduct(3); // return 40. The product of the last 3 numbers is 2 * 5 * 4 = 40
 productOfNumbers.getProduct(4); // return 0. The product of the last 4 numbers is 0 * 2 * 5 * 4 = 0
 productOfNumbers.add(8);        // [3,0,2,5,4,8]
-productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers is 4 * 8 = 32  */
+productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers is 4 * 8 = 32 
+
+Constraints:
+
+0 <= num <= 100
+1 <= k <= 4 * 104
+At most 4 * 104 calls will be made to add and getProduct.
+The product of the stream at any point in time will fit in a 32-bit integer.*/
