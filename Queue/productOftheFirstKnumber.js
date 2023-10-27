@@ -21,4 +21,14 @@ ProductOfNumbers.prototype.add = function(num) {
     this.ranges.push(num)
     return;
   }
- 
+  if(num===0)
+  {
+    this.ranges.push(0)
+    this.zeroIndex = this.ranges.length-1;
+    this.total=1;
+    return;
+  }
+  this.total = this.total*num
+  this.ranges.push(this.total);
+};
+
