@@ -52,4 +52,20 @@ ProductOfNumbers.prototype.getProduct = function(k) {
         return 0
       }
     }
-   
+    
+    let index = this.ranges.length-k-1;
+    let totalProd = this.ranges[this.ranges.length-1];
+    let prodAtIndex = this.ranges[index];
+    if(this.zeroIndex===index)
+    {
+      return totalProd
+    }
+    if(this.zeroIndex===-1 || this.zeroIndex<=index)
+    {
+      return (totalProd/prodAtIndex)
+    }
+    else{
+      return 0;
+    }
+};
+
