@@ -33,4 +33,9 @@ Example 2:
 
 Input: head = [1,1,1,1]
 Output: [1,1,1,1]
-Explanation: Every node has value 1, so no nodes are removed. */
+Explanation: Every node has value 1, so no nodes are removed.
+
+Constraints:
+
+The number of the nodes in the given list is in the range [1, 105].
+1 <= Node.val <= 105*/
