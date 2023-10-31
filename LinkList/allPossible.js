@@ -15,3 +15,5 @@ var allPossibleFBT = function(n) {
     dp[n]=ret;
     return ret;
 };
+
+allPossibleFBT()
