@@ -10,3 +10,4 @@ var removeNodes = function(head) {
     return head
     
 };
+removeNodes()
