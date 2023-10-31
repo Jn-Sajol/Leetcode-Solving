@@ -16,4 +16,7 @@ const isPalindrome = function(head) {
       palindrome.push(head.val);
       head = head.next;
     }
+
+    
+    return true;
   };
