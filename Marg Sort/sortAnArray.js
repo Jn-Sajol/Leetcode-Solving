@@ -6,3 +6,4 @@ var sortArray = function(nums) {
     return nums.sort(compare);
     
 };
+sortArray()
